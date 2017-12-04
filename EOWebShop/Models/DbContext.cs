@@ -9,6 +9,7 @@ namespace EOWebShop.Models
             return new ApplicationDbContext();
         }
 
-        //public DbSet<Proizvod> Proizvodi { get; set; }
+        public DbSet<Proizvod> Proizvodi { get; set; }
+        public DbSet<Proizvodac> Proizvodaci { get; set; }
     }
 }

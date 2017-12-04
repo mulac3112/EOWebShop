@@ -183,9 +183,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\JediniceMjere.cs" />
+    <Compile Include="Migrations\201712041922110_InitSetup04122017_alen.cs" />
+    <Compile Include="Migrations\201712041922110_InitSetup04122017_alen.Designer.cs">
+      <DependentUpon>201712041922110_InitSetup04122017_alen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DbContext.cs" />
     <Compile Include="Models\Proizvod.cs" />
+    <Compile Include="Models\Proizvodac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -261,6 +267,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712041922110_InitSetup04122017_alen.resx">
+      <DependentUpon>201712041922110_InitSetup04122017_alen.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
